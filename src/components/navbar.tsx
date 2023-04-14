@@ -1,4 +1,4 @@
-import {  } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { auth } from '../config/firebase'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import Container from 'react-bootstrap/Container';
@@ -35,17 +35,17 @@ export const Navigationbar = () => {
                         {user && (
                             <>
                             <Nav.Link href="#">{user?.displayName}</Nav.Link>
-                            <Nav.Link href="/home">Home</Nav.Link>
+                            <Nav.Link href="#"><Link to="/home">Home</Link></Nav.Link>
                             </>
                         )}
                         
 
                         {user && (
-                            <Nav.Link href='/createpost'>Create</Nav.Link>
+                            <Nav.Link href='#'><Link to="/createpost">Create</Link></Nav.Link>
                         )}
                         {
-                            !user ? <Nav.Link href="/login">Log In</Nav.Link>
-                            : <Nav.Link onClick={logOutUser} >LogOut</Nav.Link>
+                            !user ? <Nav.Link href="#"><Link to="/">Log In</Link></Nav.Link>
+                            : <Nav.Link onClick={logOutUser} ><Link to="/">Log Out</Link></Nav.Link>
                         
                         }
                         
