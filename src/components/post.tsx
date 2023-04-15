@@ -8,6 +8,7 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './post.css'
 
 
 interface Props {
@@ -65,13 +66,9 @@ export const Post = (props: Props) => {
     }, [])
 
     return (
-        <div style={{width:'2000px'}}>
-            <Container style={{width:'1000px',border:'2px solid black'}}>
-                <Row>
-                    <Col style={{border:'2px solid red'}}className='leftcol'></Col>
-                    <Col style={{border:'2px solid red'}}className='middleCol'>
-                        <div>
-                            <Card style={{ backgroundColor: 'rgba(71, 68, 68, 0.6)' }} >
+        <>
+                        <div className='tweets'>
+                            <Card className='ourCard' >
                                 <Card.Header >{post.title}</Card.Header>
                                 <Card.Body>
                                     <blockquote className="blockquote mb-0">
@@ -90,11 +87,7 @@ export const Post = (props: Props) => {
                                 </Card.Body>
                             </Card>
                         </div>
-                    </Col>
-                    <Col style={{border:'2px solid red'}}className='rightcol'></Col>
-                </Row>
-            </Container>
 
-        </div>
+        </>
     )
 }

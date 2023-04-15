@@ -1,6 +1,6 @@
 import { Link} from 'react-router-dom'
 import { auth } from '../config/firebase'
-import './navbar.css'
+// import './navbar.css'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { signOut } from 'firebase/auth'
 import { faHome, faAddressCard, faRightToBracket, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-export const Navigationbar = () => {
+export const Navigationbar2 = () => {
     const [user] = useAuthState(auth)
     
     const logOutUser = async () => {
@@ -17,8 +17,8 @@ export const Navigationbar = () => {
     }
     return (
         <div>
-            <Navbar  className='navbar ourSideBar'>
-                    <Nav className="me-auto allItems">
+            <Navbar  className='navbar'>
+                    <Nav className="me-auto ">
                         <div className='imgCenter'>
                             {user &&
                             (
@@ -35,22 +35,18 @@ export const Navigationbar = () => {
                     
                         {user && (
                             <>
-                            <Nav.Link href="#" className='sidebarItem'>{user?.displayName}</Nav.Link>
-                            </>
-                        )}
-                        {user && (
-                            <>
-                            <Nav.Link href="#"><Link to="/home" className='sidebarItem'><FontAwesomeIcon  className="fontAwesome" icon={faHome} />Home</Link></Nav.Link>
+                            <Nav.Link href="#">{user?.displayName}</Nav.Link>
+                            <Nav.Link href="#"><Link to="/home">Home</Link></Nav.Link>
                             </>
                         )}
                         
 
                         {user && (
-                            <Nav.Link href='#'><Link to="/createpost"  className='sidebarItem'><FontAwesomeIcon  className="fontAwesome" icon={faAddressCard} />Create</Link></Nav.Link>
+                            <Nav.Link href='#'><Link to="/createpost">Create</Link></Nav.Link>
                         )}
                         {
-                            !user ? <Nav.Link href="#" ><Link to="/" className='sidebarItem'> <FontAwesomeIcon className="fontAwesome"  icon={faRightToBracket} />Log In</Link></Nav.Link>
-                            : <Nav.Link onClick={logOutUser}  ><Link to="/" className='sidebarItem'> <FontAwesomeIcon  className="fontAwesome" icon={faRightFromBracket} />Log Out</Link></Nav.Link>
+                            !user ? <Nav.Link href="#"><Link to="/" className='sidebarItem'><FontAwesomeIcon className="fontAwesome"  style={{fontSize: 'large'}} icon={faRightToBracket}/>Log In</Link></Nav.Link>
+                            : <Nav.Link onClick={logOutUser} ><Link to="/">Log Out</Link></Nav.Link>
                         
                         }
                         

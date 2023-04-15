@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(to bottom right, rgb(54, 7, 240), rgb(247, 6, 86));;
-  height: 710px;
-  color: rgb(155, 153, 153);
+  background-color: #333231;
+  height: 100dvh;
+  color: #f5f1ee;
   overflow-y: auto;
 }
 
@@ -16,9 +16,9 @@
 .posts{
   max-width: 600px;
   margin:  auto;
-  margin-top: -26px;
+  margin-top: 10dvh;
   /* border: 2px solid red; */
-  max-height: 800px;
+  max-height: 80dvh;
   overflow-y: auto;
   /* background-color: rgba(71, 68, 68, 0.6); */
   
@@ -67,7 +67,7 @@
   margin: 10px;
   margin-bottom: 0px;
   border-radius: 15px;
-  background-color: rgba(71, 68, 68, 0.6);
+  background-color: #222121;
 }
 
 .likeButton{
