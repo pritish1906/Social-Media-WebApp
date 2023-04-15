@@ -1,5 +1,5 @@
 import { Link} from 'react-router-dom'
-import { auth } from '../../../Social-Media-App/src/config/firebase'
+import { auth } from '../../src/config/firebase'
 import './navbar.css'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import Container from 'react-bootstrap/Container';
