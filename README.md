@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+Social Media App
+This is a social media app built using the following tech stack:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TypeScript for the front-end
+React.js for the front-end
+Firebase for the back-end and database
+The app allows users to create profiles, share posts, like and dislike posts, and authenticate with Google Authenticator.
 
-## Available Scripts
+Getting Started
+To get started with the app, you will need to have Node.js and Firebase CLI installed on your machine.
 
-In the project directory, you can run:
+Installation
+Clone the repository to your local machine using the following command:
 
-### `npm start`
+bash
+Copy code
+git clone https://github.com/pritish1906/Social-Media-App.git
+Once the repository is cloned, navigate to the root directory of the project and run the following commands:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Copy code
+npm install
+Configuration
+The app uses Firebase for the back-end and database. You will need to create a Firebase project and configure the app to use your Firebase project.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Go to the Firebase console and create a new project.
+Click on "Add app" and select "Web".
+Follow the instructions to register the app and obtain your Firebase configuration.
+Create a .env file in the root directory of the project and add the following variables:
+makefile
+Copy code
+REACT_APP_FIREBASE_API_KEY=<your-firebase-api-key>
+REACT_APP_FIREBASE_AUTH_DOMAIN=<your-firebase-auth-domain>
+REACT_APP_FIREBASE_PROJECT_ID=<your-firebase-project-id>
+REACT_APP_FIREBASE_STORAGE_BUCKET=<your-firebase-storage-bucket>
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=<your-firebase-messaging-sender-id>
+REACT_APP_FIREBASE_APP_ID=<your-firebase-app-id>
+Running the App
+To run the app, navigate to the root directory of the project and run the following command:
 
-### `npm test`
+sql
+Copy code
+npm start
+This will start the front-end server.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Features
+Liking and Disliking Posts
+Users can like and dislike posts by clicking on the corresponding buttons.
 
-### `npm run build`
+Google Authenticator
+Users can authenticate using Google Authenticator.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Creating Posts
+Users can create new posts by clicking on the "Create" button and filling out the form.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Contributing
+Contributions to the project are welcome. If you find any bugs or issues, please open an issue on the repository or submit a pull request with the fix.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+License
+This project is licensed under the MIT License. See the LICENSE.md file for details.
