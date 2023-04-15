@@ -14,7 +14,7 @@ export const Navigationbar = () => {
     }
     return (
         <div>
-            <Navbar bg="dark" variant="dark">
+            <Navbar  className='navbar'>
                 <Container>
                     {user &&
                     (

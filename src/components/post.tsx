@@ -5,6 +5,9 @@ import { db, auth } from '../config/firebase'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useEffect, useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 interface Props {
@@ -62,28 +65,36 @@ export const Post = (props: Props) => {
     }, [])
 
     return (
-        <div>
-            <div className='post middleCol opacity-100'>
-                <Card bg = "dark"  >
-                    <Card.Header >{post.title}</Card.Header>
-                    <Card.Body>
-                        <blockquote className="blockquote mb-0">
-                            <p>{post.discription}</p><br />
-                            <footer className="blockquote-footer">
+        <div style={{width:'2000px'}}>
+            <Container style={{width:'1000px',border:'2px solid black'}}>
+                <Row>
+                    <Col style={{border:'2px solid red'}}className='leftcol'></Col>
+                    <Col style={{border:'2px solid red'}}className='middleCol'>
+                        <div>
+                            <Card style={{ backgroundColor: 'rgba(71, 68, 68, 0.6)' }} >
+                                <Card.Header >{post.title}</Card.Header>
+                                <Card.Body>
+                                    <blockquote className="blockquote mb-0">
+                                        <p>{post.discription}</p><br />
+                                        <footer className="blockquote-footer">
 
-                                @{post.username}
-                                <button className='likeButton'
-                                    onClick={!hasUserLiked ? addLike :
-                                        removeLike
-                                    }>
-                                    {hasUserLiked ? <>&#128078;</> : <>&#128077;</>}
-                                    {likes && <>{likes?.length}</>}</button>
-                            </footer>
-                        </blockquote>
-                    </Card.Body>
-                </Card>
-            </div>
-            <div className='rightCol'></div>
+                                            @{post.username}
+                                            <button className='likeButton'
+                                                onClick={!hasUserLiked ? addLike :
+                                                    removeLike
+                                                }>
+                                                {hasUserLiked ? <>&#128078;</> : <>&#128077;</>}
+                                                {likes && <>{likes?.length}</>}</button>
+                                        </footer>
+                                    </blockquote>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                    </Col>
+                    <Col style={{border:'2px solid red'}}className='rightcol'></Col>
+                </Row>
+            </Container>
+
         </div>
     )
 }

@@ -20,7 +20,7 @@
   /* border: 2px solid red; */
   max-height: 800px;
   overflow-y: auto;
-  background-color: #282c34;
+  /* background-color: rgba(71, 68, 68, 0.6); */
   
 }
 .posts::-webkit-scrollbar{
@@ -34,7 +34,12 @@
   margin: auto;
   margin-top: 5px;
   margin-bottom: 5px; 
+  /* background-color: rgba(71, 68, 68, 0.6); */
   
+}
+
+.middlecol{
+  border: 2px solid red;
 }
 
 .formErrors{
@@ -43,6 +48,27 @@
   
 }
 
+.loginForm{
+  box-sizing: border-box;
+  max-width: 550px;
+  margin:auto auto;
+  flex: auto;
+  padding: 20px;
+  border: 1px solid rgba(71, 68, 68, 0.6);
+  background-color: rgba(71, 68, 68, 0.6);
+  border-radius: 20px;
+}
+.btn{
+  margin: 0px 5px;
+  background-color: rgba(71, 68, 68, 0.6);
+}
+
+.navbar{
+  margin: 10px;
+  margin-bottom: 0px;
+  border-radius: 15px;
+  background-color: rgba(71, 68, 68, 0.6);
+}
 
 .likeButton{
   box-sizing: border-box;

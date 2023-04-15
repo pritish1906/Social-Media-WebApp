@@ -8,10 +8,10 @@ import {Navigationbar} from './components/navbar'
 import { CreatePost } from './pages/createpost';
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <Router>
         <Navigationbar/>
-        <Routes>
+        <Routes >
           <Route path='/home' element = {<Main />}/>
           <Route path='/' element = {<Login />}/>
           <Route path='/createpost' element = {< CreatePost/>}></Route>
