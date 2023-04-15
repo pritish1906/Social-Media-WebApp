@@ -47,7 +47,6 @@ export const Login = () => {
                 </Button>
             </Form>
             </div>
-
         </div>
     )
 }
