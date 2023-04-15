@@ -5,8 +5,8 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { addDoc, collection } from 'firebase/firestore'
-import { auth, db } from '../config/firebase'
-import { useNavigate } from 'react-router-dom'
+import { auth, db} from '../config/firebase'
+import {useNavigate} from 'react-router-dom'
 
 interface FormData {
     title: string;

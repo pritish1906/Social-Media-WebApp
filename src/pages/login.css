@@ -1,0 +1,27 @@
+.paragraph{
+    color: #c8c4c1;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.heading{
+    color: #f5f1ee;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn{
+    background-color: #f5f1ee;
+    color: #222121;
+}
+.btn:hover{
+    background-color: #f5f1ee;
+    color: #222121;
+    position: relative;
+    right: 2px;
+    bottom: 2px;
+}
+.formInputs{
+    background-color: #f5f1ee;
+    color: #222121;
+}

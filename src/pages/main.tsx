@@ -1,7 +1,8 @@
 import { getDocs, collection } from 'firebase/firestore'
-import { db} from '../config/firebase'
+import { db} from '../../src/config/firebase'
 import { useEffect, useState } from 'react';
 import { Post } from '../components/post';
+import './main.css'
 
 export interface PostData {
     id: string;
@@ -28,10 +29,13 @@ export const Main = () => {
 
 
     return (
-        <div className='posts'>
-            <div className='post'>
-            {postsList?.map((post) => <Post post ={post}/>)}
+        <>
+        {/* <div className='appName'>TAP TAP</div> */}
+            <div className='posts'>
+                <div className='post'>
+                {postsList?.map((post) => <Post post ={post}/>)}
+                </div>
             </div>
-        </div>
+        </>
     )
 }
