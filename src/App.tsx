@@ -8,7 +8,7 @@ import {Navigationbar} from './components/navbar'
 import {Navigationbar2} from './components/navbar2'
 import { CreatePost } from './pages/createpost';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { db, auth } from './config/firebase'
+import { db, auth } from '../../Social-Media-App/src/config/firebase'
 function App() {
   const [user] = useAuthState(auth)
   return (

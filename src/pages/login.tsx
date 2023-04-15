@@ -1,4 +1,4 @@
-import { auth, provider } from '../config/firebase'
+import { auth, provider } from '../../../Social-Media-App/src/config/firebase'
 import { signInWithPopup } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
 import Button from 'react-bootstrap/Button';
