@@ -45,7 +45,7 @@ export const Login = () => {
                     <Button className='btn' onClick={loginWithGoogle}>
                     Sign in with google
                 </Button>
-                    </Form>
+            </Form>
             </div>
         </div>
     )
