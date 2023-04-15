@@ -24,9 +24,6 @@ export const Login = () => {
                 <p> Don't have an account yet? Sign up today and join our community!</p>
             </section>
             <div className="loginForm">
-<<<<<<< HEAD
-                <Button className='btn' onClick={loginWithGoogle}>
-=======
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicName">
                         <Form.Control type="name" className='formInputs' placeholder="Enter Name" />
@@ -46,11 +43,10 @@ export const Login = () => {
 
                     <Button className='btn' type="submit">Submit</Button>
                     <Button className='btn' onClick={loginWithGoogle}>
->>>>>>> 48da61a317d061d8dd45f10c1bac50ac33d9dca3
                     Sign in with google
                 </Button>
+                    </Form>
             </div>
-
         </div>
     )
 }
