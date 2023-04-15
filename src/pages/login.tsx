@@ -18,30 +18,9 @@ export const Login = () => {
     return (
         <div>
             <div className="loginForm">
-                <Form>
-                    <Form.Group className="mb-3" controlId="formBasicName">
-                        <Form.Control type="name" placeholder="Enter Name" />
-                    </Form.Group>
-
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control type="email" placeholder="Enter email" />
-                    </Form.Group>
-
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control type="email" placeholder="Enter email" />
-                    </Form.Group>
-
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Control type="password" placeholder="Password" />
-                    </Form.Group>
-
-                    <Button className='btn' type="submit">Submit</Button>
-                    <Button className='btn' onClick={loginWithGoogle}>
+                <Button className='btn' onClick={loginWithGoogle}>
                     Sign in with google
-                    </Button>
-    
-                </Form>
-                
+                </Button>
             </div>
 
         </div>
