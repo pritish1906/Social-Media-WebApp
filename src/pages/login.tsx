@@ -33,17 +33,17 @@ export const Login = () => {
                         <Form.Control type="email" className='formInputs' placeholder="Enter email" />
                     </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control type="email" className='formInputs' placeholder="Enter email" />
-                    </Form.Group>
-
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Control type="password" className='formInputs' placeholder="Password" />
                     </Form.Group>
 
-                    <Button className='btn' type="submit">Submit</Button>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Control type="password" className='formInputs' placeholder="Confirm Password" />
+                    </Form.Group>
+
+                    <Button className='btn' type="submit">Sign Up</Button>
                     <Button className='btn' onClick={loginWithGoogle}>
-                    Sign in with google
+                    Sign In
                 </Button>
             </Form>
             </div>
