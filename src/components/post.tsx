@@ -1,7 +1,7 @@
 import { addDoc, deleteDoc, collection, getDocs, query, where, doc } from 'firebase/firestore';
 import { PostData } from '../pages/main'
 import Card from 'react-bootstrap/Card';
-import { db, auth } from '../config/firebase'
+import { db, auth } from '../../src/config/firebase'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useEffect, useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
