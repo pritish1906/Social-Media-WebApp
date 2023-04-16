@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# TapTap
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This social media application is built on a scalable server-client architecture, utilizing modern web technologies like React and Firebase. It provides users with features such as user profiles, news feeds, messaging, and photo sharing, and event creation. The app incorporates algorithms to personalize the user experience, based on factors such as interests and activity.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Appendix
 
-### `npm start`
+This social media application uses TypeScript and ReactJS for the frontend and Firebase for the backend. TypeScript offers improved development tools and error checking, while ReactJS provides a fast and efficient user interface. Firebase provides a reliable and scalable backend infrastructure, including user authentication, cloud storage, and real-time database capabilities. The app also leverages Firebase Cloud Messaging for push notifications and Firebase Hosting for secure content delivery.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Authors
 
-### `npm test`
+- [@Pritish Sharma](https://github.com/pritish1906)
+- [@Harsh Shrivastava](https://github.com/HarshShrivastava7)
+- [@Harsh Rai](https://github.com/raiharsh1811)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Badges
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributing
 
-### `npm run eject`
+Contributions are always welcome!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+See `contributing.md` for ways to get started.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Please adhere to this project's `code of conduct`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Deployment
 
-## Learn More
+To deploy this project run
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+  npm run deploy
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Features
+
+- Create daily Posts, Updates, Views, Trends, News and many more...
+- Like and Dislike Posts
+- Responsive
+- Cross platform
+
+
+![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
